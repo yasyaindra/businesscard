@@ -1,6 +1,6 @@
 {
   "name": "natterstefan",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Stefan Natter (@natterstefan)'s business card",
   "main": "./bin/card.js",
   "bin": {
