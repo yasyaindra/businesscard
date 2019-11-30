@@ -9,25 +9,25 @@ const boxen = require('boxen')
 const options = {
   padding: 1,
   margin: 1,
-  borderStyle: 'round'
+  borderStyle: 'round',
 }
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Max Stoiber /'),
-  handle: chalk.cyan('mxstbr'),
-  work: chalk.white('Software Engineer at GitHub'),
-  twitter: chalk.cyan('twitter.com/mxstbr'),
-  github: chalk.cyan('github.com/mxstbr'),
-  linkedin: chalk.cyan('linkedin.com/in/mxstbr'),
-  web: chalk.cyan('mxstbr.com'),
-  npx: chalk.white('npx mxstbr'),
+  name: chalk.white('Stefan Natter /'),
+  handle: chalk.cyan('natterstefan'),
+  work: chalk.white('Software Engineer at Lovely Systems'),
+  twitter: chalk.cyan('twitter.com/natterstefan'),
+  github: chalk.cyan('github.com/natterstefan'),
+  linkedin: chalk.cyan('linkedin.com/in/natterstefan'),
+  web: chalk.cyan('natterstefan.com'),
+  npx: chalk.white('npx natterstefan'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
   labelWeb: chalk.white.bold('       Web:'),
-  labelCard: chalk.white.bold('      Card:')
+  labelCard: chalk.white.bold('      Card:'),
 }
 
 // Actual strings we're going to output
@@ -41,6 +41,21 @@ const webing = `${data.labelWeb}  ${data.web}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+const output =
+  heading +
+  newline +
+  newline +
+  working +
+  newline +
+  twittering +
+  newline +
+  githubing +
+  newline +
+  linkedining +
+  newline +
+  webing +
+  newline +
+  newline +
+  carding
 
 console.log(chalk.green(boxen(output, options)))
